@@ -19,11 +19,11 @@ def reconstruct(url: str) -> str:
         # Instagram -> Bibliogram
         # If instagram in platform_lower and "p/" in subdirectory then url is treated as Instagram profile...
         if instagram in platform_lower and "p/" in subdirectory:
-            return "https://bibliogram.art/" + key
+            return "https://imginn.com/" + key
 
         # ...Elif instagram in platform_lower then url is treated as Instagram post
-        elif instagram in platform_lower:
-            return "https://bibliogram.art/u/" + key
+        #elif instagram in platform_lower:
+            #return "https://bibliogram.art/u/" + key
 
         # Reddit -> Teddit
         # Elif reddit in platform_lower then url is treated as Reddit subreddit or post
